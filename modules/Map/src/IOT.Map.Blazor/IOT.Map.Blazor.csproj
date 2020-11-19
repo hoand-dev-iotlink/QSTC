@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <Import Project="..\..\common.props" />
+    
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <RazorLangVersion>3.0</RazorLangVersion>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <OutputPath>D:\TaiLieuIOTLINK\QTSC\Project\abpMVC\application\src\IOT.Web\bin\Debug\netcoreapp3.1</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.AutoMapper" Version="3.3.1" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Components.WebAssembly.Theming" Version="3.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\IOT.Map.HttpApi.Client\IOT.Map.HttpApi.Client.csproj" />
+    </ItemGroup>
+</Project>

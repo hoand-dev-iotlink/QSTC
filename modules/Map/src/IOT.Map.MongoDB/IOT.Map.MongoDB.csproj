@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>IOT.Map</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\TaiLieuIOTLINK\QTSC\Project\abpMVC\application\src\IOT.Web\bin\Debug\netcoreapp3.1</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.MongoDB" Version="3.3.1" />
+    <ProjectReference Include="..\IOT.Map.Domain\IOT.Map.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
